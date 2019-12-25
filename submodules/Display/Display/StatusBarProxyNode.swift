@@ -14,7 +14,9 @@ public enum StatusBarStyle {
                 self = .Black
             case .lightContent:
                 self = .White
-            case .blackOpaque:
+            case .blackOpaque, .darkContent:
+                self = .Black
+            @unknown default:
                 self = .Black
         }
     }
